@@ -3,38 +3,48 @@
   <head>
     <title>Medical Devices</title> 
   <body>
-    <a href="..." rel="all-devices">All Devices</a> 
-    <ul id ="all-devices"> 
-      <li class="all-device">
-        <a href="vidas.html" rel="device">Device: VIDAS</a>
-      </li>
-      <li class="all-device">
-        <a href="airideal.html" rel="device">Device: AIRIDEAL</a>
-      </li>
-      <li class="all-device">
-        <a href="vitek.html" rel="device">Device: VITEK2C</a>
-      </li>
-    </ul>
+    <a href="all_devices.html" rel="all-devices">All Devices</a> 
+    <div id="devices">
+      <ul class ="all-devices"> 
+        <li>
+          <a href="vidas.html" rel="device">Device: VIDAS</a>
+        </li>
+        <li>
+          <a href="airideal.html" rel="device">Device: AIRIDEAL</a>
+        </li>
+        <li>
+          <a href="vitek.html" rel="device">Device: VITEK2C</a>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <a> Queries </a>
+    <div id="queries"> 
+      <ul>
+        <li><a rel="List Active Devices" href="active_devices.html" title="Show Active Devices">Active Devices</a></li>
+      </ul>
+    </div>
     <br /> <br />
+    
 
-    <form method="get" action "actice_devices.html" class="active-devices">
+    <form method="get" action "active_devices.html" class="active-devices">
          Device Status: <input type="text" name="status" value="A" />
       <input type="submit" value="Send" />
+    </form>
     <br /> <br />
 
-    <form method="get" action "..." class="prodline-Capacity">
+    <form method="get" action "prodline_capacity.html" class="prodline-Capacity">
           Product Line: <input type="text" name="pline" value="B10" />
       Minimum Capacity: <input type="text" name="capacity" value=60 />
       <input type="submit" value="Send" />
+    </form>
       <br /> <br />
-
-    <form method="get" action "..." class="launch-period">
+    <form method="get" action "launch_period.html" class="launch-period">
         Launched From: <input type="text" name="launch_From" value=1990-01-01 />
-                   To: <input type="text" name="launch_To" value=2012-12-31 />
+                   To: <input type="text" name="launch_To" value=1999-12-31 />
       <input type="submit" value="Send" />
-    <br /> <br />
-
-</form>
+      <br /> <br />
+    </form>
 
   </body>
 </html>
