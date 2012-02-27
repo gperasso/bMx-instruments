@@ -1,0 +1,49 @@
+ID Attribute Values
+devices: Applied  to  a  div tag. The  list of  devices in  this representation.  
+
+queries: Applied to a div tag. The  list of  valid queries in this representation. This is a list of simple queries (represented by the HTML anchor  tag). 
+
+
+CLASS attribute values 
+all_devices: Applied to a UL tag. A list representation of all devices maintained in the application.
+
+device:Applied to a li tag. It's a representation of a single device. It should contain the following elements: 
+
+device_id: Applied to a SPAN  tag. The device Identification number. 
+
+name: Applied to a SPAN  tag. The device full name.
+
+status: Applied to a SPAN  tag. The device status, could be either "A" active, or "I" inactive.
+
+launch-period: Applied to a SPAN  tag. The device's launching date to the market.
+
+product-line: Applied to a SPAN  tag. The device's product line.
+
+capacity: Applied to a SPAN  tag. The capacity, or number of tests that the device can processed in one run.
+
+active_devices: Applied to a FORM  tag. A link template to search of all devices by status. The element must be set to FORM.method="get" and should contain the following elements: INPUT[ text].name="status" 
+
+launch_period: Applied to a FORM  tag. A link template to search of all devices by launching date. The element must be set to FORM.method="get" and should contain the following elements: 
+    INPUT[ text].name="launch_from" 
+    INPUT[ text].name="launch_to" 
+
+prodline_capacity: Applied to a FORM  tag. A link template to search of all devices by product line and minimum capacity. The element must be set to FORM.method="get" and should contain the following elements: 
+    INPUT[ text].name="pline" 
+    INPUT[ text].name="capacity" 
+
+
+NAME attribute Values
+status: Applied  to  an INPUT[text]. The search  value  to use  when searching devices.
+
+capacity: Applied  to  an INPUT[text]. The search  value  to use  when searching devices, it's used with pline.
+
+pline: Applied  to  an INPUT[text]. The search  value  to use  when searching devices, it's used with capacity.
+
+launch_from: Applied  to  an INPUT[text]. The search  value  to use  when searching devices by launching date.
+
+launch_to: Applied  to  an INPUT[text]. The search  value  to use  when searching devices by launching date. 
+
+REL attribute values
+all-devices: Applied to an A tag. A reference to the list of devices in the system.
+
+device: Applied to an A tag. A reference to an individual device.
