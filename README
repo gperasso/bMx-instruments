@@ -31,6 +31,10 @@ prodline_capacity: Applied to a FORM  tag. A link template to search of all devi
     INPUT[ text].name="pline" 
     INPUT[ text].name="capacity" 
 
+add_devices: Applied to a FORM tag. A link template to create a new device. All the attributes are required and should be populated.
+
+update_device: Applied to a FORM tag. A link template to update the designated device's data.
+
 
 NAME attribute Values
 status: Applied  to  an INPUT[text]. The search  value  to use  when searching devices.
@@ -42,6 +46,11 @@ pline: Applied  to  an INPUT[text]. The search  value  to use  when searching de
 launch_from: Applied  to  an INPUT[text]. The search  value  to use  when searching devices by launching date.
 
 launch_to: Applied  to  an INPUT[text]. The search  value  to use  when searching devices by launching date. 
+
+name: Device Name. Applied to an INPUT[text]. The name of the device as requested in the add and update FORMS.  
+
+Prod_line: Applied to an INPUT[text]. The name of the device as requested in the add and update FORMS. 
+
 
 REL attribute values
 all-devices: Applied to an A tag. A reference to the list of devices in the system.
