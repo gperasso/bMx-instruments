@@ -18,33 +18,48 @@
       </ul>
     </div>
     <br />
-    <a> Queries </a>
+    
+        <a> Queries </a>
     <div id="queries"> 
       <ul>
         <li><a rel="List Active Devices" href="active_devices.html" title="Show Active Devices">Active Devices</a></li>
       </ul>
     </div>
+
+    <br />     
+    <a><big> Add a Device </big></a> <br />
+    <form method="post" action "..." class="add_device">
+         Device Id: <input type="text" name="Device_ID" value="" required="true" /><br />
+         Name     : <input type="text" name="Name" value="" required="true" /><br />
+                    <input type="radio" name="status" value="active" />Active<br />
+                    <input type="radio" name="status" value="inactive" />Inactive <br />        
+         Launch Date: <input type="text" name="launch" value="" required="true" /><br />
+         Prod Line: <input type="text" name="prod_line" value="" required="true" /><br />
+         Capacity : <input type="text" name="capacity" value="" required="true" /><br />
+      <input type="submit" value="Send" />
+    </form>
     <br /> <br />
     
 
+    <a><big> Queries </big></a>
     <form method="get" action "active_devices.html" class="active-devices">
          Device Status: <input type="text" name="status" value="A" />
       <input type="submit" value="Send" />
     </form>
-    <br /> <br />
+    <br /> 
 
     <form method="get" action "prodline_capacity.html" class="prodline-Capacity">
           Product Line: <input type="text" name="pline" value="B10" />
       Minimum Capacity: <input type="text" name="capacity" value=60 />
       <input type="submit" value="Send" />
     </form>
-      <br /> <br />
+      <br /> 
     <form method="get" action "launch_period.html" class="launch-period">
         Launched From: <input type="text" name="launch_From" value=1990-01-01 />
                    To: <input type="text" name="launch_To" value=1999-12-31 />
       <input type="submit" value="Send" />
-      <br /> <br />
     </form>
 
   </body>
 </html>
+
